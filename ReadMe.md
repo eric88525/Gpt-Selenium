@@ -26,7 +26,7 @@ Install the required packages [Selenium](https://github.com/SeleniumHQ/selenium)
 pip install -r requirements.txt
 ```
 ## Example
-A window will pop up after execution. Please log in manually.
+**A window will pop up after execution. Please log in manually.**
 ```python
 from gpt_parser import gptParser
 import time
@@ -34,21 +34,24 @@ import time
 dirver = gptParser.get_driver(driver_path="driver path")
 gpt = gptParser(driver=dirver)
 ```
-Send and read the message.
+**Send and read the message.**
 ```python
 gpt('1+1=?') # Send a question
 time.sleep(1) # Wait for the response
 print(gpt.read_respond()) # Read the response
 ```
 ![](/imgs/result.png)
+
 ![](/imgs/gpt-1.png)
+
 ![](/imgs/gpt-2.png)
-Open a new chat
+
+**Open a new chat**
 ```python
 gpt.new_chat()
 ```
 
-Close the driver
+**Close the driver**
 ```python
 gpt.close() # Close the driver
 ```
