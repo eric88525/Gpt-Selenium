@@ -1,25 +1,26 @@
 # GPT + Selenium
-Selenium can directly control the browser to manipulate elements on the screen, and is commonly used for dynamic web scraping. If you have spent a lot of money buying GPT-Plus, but find that you still need to pay extra for using the API (that's me), you can try this method.
+Selenium can directly control the browser to manipulate elements on the screen and is commonly used for dynamic web scraping. If you have already spent a lot of money buying GPT-Plus, but still need to pay extra for using the API (which is me), you can try this method instead.
 
-**Pros**
+**Pros**  
 Unlimited usage with a monthly fee of 20 USD.
-
-**Cons**
+**Cons**  
 Usage is limited to small amounts as there is a restriction of 45 minutes if too much data is requested within an hour.
 
-## How to use?
+## Get ready
+
+### Step 1
 Download [ChromeDriver](https://chromedriver.chromium.org/downloads). I strongly recommend that you update to the latest version of Chrome.
 
-**Linux setup**
+**Linux**
 ```
 unzip chromedriver_linux64.zip
 mv chromedriver /usr/bin/
 chmod +x /usr/bin/chromedriver
 ```
 **Windows**
-Either click the exe file or specify driver_path when getting the driver.
-
-Install requirements [Selenium](https://github.com/SeleniumHQ/selenium) and [undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
+Either click the .exe file or specify `driver_path` when getting the driver.
+### Step 2
+Install the required packages [Selenium](https://github.com/SeleniumHQ/selenium) and [undetected-chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
 ```
 pip install -r requirements.txt
 ```
